@@ -5,7 +5,7 @@ from sklearn.linear_model import LinearRegression
 import numpy as np
 
 st.set_page_config(page_title="Screener Saham Indonesia", layout="wide")
-st.title("📊 Screener Saham Indonesia dengan Prediksi AI")
+st.title("📊 Screener Saham Ala Ala BlueBox")
 
 # === Fungsi ambil data ===
 @st.cache_data(show_spinner=False)
