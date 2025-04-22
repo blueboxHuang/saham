@@ -3,7 +3,8 @@ import yfinance as yf
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 import numpy as np
-
+url = 'https://raw.githubusercontent.com/blueboxHuang/Screener/main/kode_saham.csv'
+df = pd.read_csv(url)
 st.set_page_config(page_title="Screener Saham Indonesia", layout="wide")
 st.title("📊 Screener Saham Ala Ala BlueBox")
 
