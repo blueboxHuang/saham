@@ -91,12 +91,12 @@ if uploaded_file:
 if "df_result" in st.session_state:
     df_result = st.session_state["df_result"]
 
-    opsi_volume = st.checkbox("📈 Hanya saham dengan volume harian > 200.000")
+    opsi_volume = st.checkbox("📈 Hanya saham dengan volume harian > 500.000")
     opsi_fundamental = st.checkbox("✅ Filter berdasarkan rasio fundamental (PER, PBV, ROE, DER)")
 
     df_filtered = df_result.copy()
     if opsi_volume:
-        df_filtered = df_filtered[df_filtered["Avg Volume"] > 2_000_000]
+        df_filtered = df_filtered[df_filtered["Avg Volume"] > 500_000]
 
     if opsi_fundamental:
         df_filtered = df_filtered[
