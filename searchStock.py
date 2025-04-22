@@ -3,11 +3,11 @@ import yfinance as yf
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 import numpy as np
-
-st.set_page_config(page_title="Screener Saham Indonesia", layout="wide")
-st.title("📊 Screener Saham Ala Ala BlueBox")
 url = 'https://raw.githubusercontent.com/blueboxHuang/Screener/main/kode_saham.csv'
 df = pd.read_csv(url)
+st.set_page_config(page_title="Screener Saham Indonesia", layout="wide")
+st.title("📊 Screener Saham Ala Ala BlueBox")
+
 # === Fungsi ambil data ===
 @st.cache_data(show_spinner=False)
 def get_fundamental_data(ticker_list):
